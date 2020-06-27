@@ -1,0 +1,56 @@
+body{
+	font-size: 20px;
+	font-family: segoe ui;
+}
+.sidebar{
+	border-right: 1px solid #aaaaaa;
+}
+
+.sidebar-btn{
+	margin-bottom: 20px;
+	min-width: 48.5px;
+	height: 48.5px;
+	font-weight: bolder;
+	font-size: 19px;
+	border-radius: 25px;
+	color: black;
+}
+.sidebar-btn:hover{
+	font-weight: bold;
+	border-radius: 25px;
+	background-color: rgba(29, 161, 242, 0.15);
+	color: rgba(29, 161, 242, 1);
+}
+
+.tweet-btn{
+	width: 215px;
+	height: 49px;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(29, 161, 242);
+	color: white;
+}
+.tweet-btn:hover{
+	background-color: rgb(9, 141, 222);
+	color: white;
+}
+#box{
+	max-width: 598px;
+	background-color: white;
+}
+.right-panels{
+	min-width: 288px;
+	max-width: 348px;
+}
+#box{
+	width: 598px;
+}
+
+@media (min-width: 1270px) {
+	.collapse{
+		display: none !important;
+	}
+}

@@ -1,0 +1,54 @@
+body{
+	font-family: segoe ui;
+}
+.tweet-box{
+	min-height: 92px;
+	border-bottom: 1px solid #aaaaaa;
+	padding: 9px;
+	padding-left: 14px;
+	margin-right: 0px;
+}
+.twt-text{
+	margin-left: 9px;
+	font-size: 14px;
+	padding: 0;
+}
+
+a{
+	color:#777777;
+}
+
+#twt-feed{
+	min-width: 375px;
+	max-width: 598px;
+}
+.chev-btn{
+	padding: 0;
+	float: right;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	color: #777777;
+}
+.chev-btn:hover{
+	background-color: #cccccc;
+	color: #777777;
+}
+
+.small-btn{
+	padding: 0;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	color: #777777;
+}
+
+.small-btn:hover{
+	background-color: #cccccc;
+	color: #777777;
+}
+
+/*small-bar{
+	width: 24.26vw;
+	max-width: 
+}*/
