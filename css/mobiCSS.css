@@ -1,5 +1,43 @@
 body{
+	font-size: 20px;
 	font-family: segoe ui;
+}
+a{
+	color:#777777;
+}
+
+.sidebar-btn{
+	color: black;
+	margin-bottom: 20px;
+	min-width: 48.5px;
+	height: 48.5px;
+	font-weight: bolder;
+	font-size: 19px;
+	border-radius: 25px;
+}
+.sidebar-btn:hover{
+	font-weight: bold;
+	border-radius: 25px;
+	background-color: rgba(29, 161, 242, 0.15);
+	color: rgba(29, 161, 242, 1);
+}
+
+.tweet-btn{
+	margin-bottom: 20px;
+	min-width: 48.5px;
+	width: 230px;
+	height: 48.5px;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(29, 161, 242);
+	color: white;
+}
+.tweet-btn:hover{
+	background-color: rgb(9, 141, 222);
+	color: white;
 }
 .tweet-box{
 	min-height: 92px;
@@ -14,13 +52,11 @@ body{
 	padding: 0;
 }
 
-a{
-	color:#777777;
-}
-
 #twt-feed{
 	min-width: 375px;
 	max-width: 598px;
+	border-right: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
 }
 .chev-btn{
 	padding: 0;
@@ -48,7 +84,63 @@ a{
 	color: #777777;
 }
 
+.accounts-btn{
+	width: 230px;
+	height: 49px;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(29, 161, 242);
+	color: white;
+}
+
 /*small-bar{
 	width: 24.26vw;
 	max-width: 
 }*/
+@media (max-width: 1281px){
+	.sidebar-btn-txt {
+		display: none !important;
+	}
+	.tweet-btn {
+		width: 48.5px;
+		height: 48.5px;
+		text-align: center;
+		padding:0;
+	}
+	#feather-ico {
+		display: block !important;
+	}
+}
+
+@media (max-width: 1005px) {
+	.sidebar-right{
+		display: none !important;
+	}
+}
+
+
+@media (min-width: 696px) {
+	#last-twt{
+		margin-bottom: 0 !important;
+		border-bottom: 0 !important;
+	}
+	.bottom-nav{
+		display: none !important;
+	}
+
+}
+
+@media (max-width: 697px) {
+	.sidebar{
+		display: none !important;
+	}
+}
+
+@media (max-height: 734px) {
+	#accounts-btn{
+		position: static !important;
+	}
+}

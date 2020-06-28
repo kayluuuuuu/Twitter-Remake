@@ -13,14 +13,33 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col" style="display: none;"></div>
-			<div class="col" id="twt-feed">
-				<nav class="navbar fixed-top navbar-light bg-light" style="border-bottom: 1px solid #cccccc; height: 52.5px; max-width: 598px">
-					<a class="navbar-brand" style="font-weight: bolder" href="#">Home</a>
-				</nav>
+		<div class="row justify-content-center">
+			<div class="col-auto sidebar">
+				<div class="sticky-top" style="min-width: 68px; max-width: 255px;">
+					<button type="button" class="btn sidebar-btn"><img src="https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png" width="25px" height="25px"></button><br>
+					<button type="button" class="btn sidebar-btn"><i class="fas fa-home"></i><span class="sidebar-btn-txt">&nbsp&nbsp&nbsp&nbspHome&nbsp&nbsp&nbsp&nbsp</span></button><br>
+					<button type="button" class="btn sidebar-btn"><i class="fas fa-hashtag"></i><span class="sidebar-btn-txt">&nbsp&nbsp&nbsp&nbspExplore&nbsp&nbsp&nbsp&nbsp</span></button><br>
+					<button type="button" class="btn sidebar-btn"><i class="far fa-bell"></i><span class="sidebar-btn-txt">&nbsp&nbsp&nbsp&nbspNotifications&nbsp&nbsp&nbsp&nbsp</span></button><br>
+					<button type="button" class="btn sidebar-btn"><i class="far fa-envelope"></i><span class="sidebar-btn-txt">&nbsp&nbsp&nbsp&nbspMessages&nbsp&nbsp&nbsp&nbsp</span></button><br>
+					<button type="button" class="btn sidebar-btn"><i class="far fa-bookmark"></i><span class="sidebar-btn-txt">&nbsp&nbsp&nbsp&nbspBookmarks&nbsp&nbsp&nbsp&nbsp</span></button><br>
+					<button type="button" class="btn sidebar-btn"><i class="far fa-list-alt"></i><span class="sidebar-btn-txt">&nbsp&nbsp&nbsp&nbspLists&nbsp&nbsp&nbsp&nbsp</span></button><br>
+					<button type="button" class="btn sidebar-btn"><i class="far fa-user"></i><span class="sidebar-btn-txt">&nbsp&nbsp&nbsp&nbspProfile&nbsp&nbsp&nbsp&nbsp</span></button><br>
+					<button type="button" class="btn sidebar-btn"><i class="fas fa-ellipsis-h"></i><span class="sidebar-btn-txt">&nbsp&nbsp&nbsp&nbspMore&nbsp&nbsp&nbsp&nbsp</span></button><br>
+					<button type="button" class="btn tweet-btn"><i class="fas fa-feather" id="feather-ico" style="display: none"></i><span class="sidebar-btn-txt">Tweet</span></button><br>
 
-				<div class="row tweet-box" style="margin-top: 51.5px;">
+					<!-- <button type="button" class="btn accounts-btn" id="accounts-btn" style="bottom: 0;position: fixed;">Profile stuff</footer> -->
+				</div>
+			</div>
+			<div class="col-12" id="twt-feed">
+				<div class="row" >
+					<div class="col" style="border-bottom: 1px solid #cccccc; height: 52.5px; min-width: 375px; max-width: 598px">
+						<a class="navbar-brand" style="color: black; font-weight: bolder" href="#">Home</a>
+					</div>
+				</div>
+				<!-- <nav class="navbar fixed-top navbar-light bg-light" >
+				</nav> -->
+
+				<div class="row tweet-box">
 					<img class="float-left" src="./images/weird.jpg" width="46px" height="46px" style="border-radius: 50%;">
 					<div class="col twt-text text-break">
 						<div class="text-truncate" style="float: left; max-width: 450px">
@@ -33,49 +52,201 @@
 							<span class="text-nowrap">&nbsp·&nbsp1m</span>
 						</div>
 						<button class="btn text-center chev-btn"><i class="fas fa-chevron-down"></i></button>
-						<span class="twt-content">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span><br>
-						<div class="d-flex justify-content-between" style="width: 77.3vw; max-width: 425px;">
+						<span class="twt-content" style="padding-right:10px;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span><br>
+						<div class="d-flex justify-content-between" style="width: 100%; max-width: 425px;">
 							<button class="btn text-center small-btn"><i class="far fa-comment"></i></button>
 							<button class="btn text-center small-btn"><i class="fas fa-retweet"></i></button>
 							<button class="btn text-center small-btn"><i class="far fa-heart"></i></button>
-							<button class="btn text-center small-btn"><i class="fas fa-sign-out-alt"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-sign-out-alt" style="transform: rotate(270deg);"></i></button>
 						</div>
 					</div>
 				</div>
 				<div class="row tweet-box">
-					b
+					<img class="float-left" src="./images/okay.jpg" width="46px" height="46px" style="border-radius: 50%;">
+					<div class="col twt-text text-break">
+						<div class="text-truncate" style="float: left; max-width: 450px">
+							<span style="font-weight: bolder;">
+								kayluuuuuuu&nbsp<i class="fas fa-lock"></i>
+							</span>
+							<span style="color: rgb(101, 119, 134)">@kayluuuuuuu</span>
+						</div>
+						<div style="float: left">
+							<span class="text-nowrap">&nbsp·&nbsp1m</span>
+						</div>
+						<button class="btn text-center chev-btn"><i class="fas fa-chevron-down"></i></button>
+						<span class="twt-content" style="padding-right:10px;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span><br>
+						<div class="d-flex justify-content-between" style="width: 100%; max-width: 425px;">
+							<button class="btn text-center small-btn"><i class="far fa-comment"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-retweet"></i></button>
+							<button class="btn text-center small-btn"><i class="far fa-heart"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-sign-out-alt" style="transform: rotate(270deg);"></i></button>
+						</div>
+					</div>
 				</div>
 				<div class="row tweet-box">
-					c
+					<img class="float-left" src="./images/weird.jpg" width="46px" height="46px" style="border-radius: 50%;">
+					<div class="col twt-text text-break">
+						<div class="text-truncate" style="float: left; max-width: 450px">
+							<span style="font-weight: bolder;">
+								kayluuuuuuu&nbsp<i class="fas fa-lock"></i>
+							</span>
+							<span style="color: rgb(101, 119, 134)">@kayluuuuuuu</span>
+						</div>
+						<div style="float: left">
+							<span class="text-nowrap">&nbsp·&nbsp1m</span>
+						</div>
+						<button class="btn text-center chev-btn"><i class="fas fa-chevron-down"></i></button>
+						<span class="twt-content" style="padding-right:10px;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span><br>
+						<div class="d-flex justify-content-between" style="width: 100%; max-width: 425px;">
+							<button class="btn text-center small-btn"><i class="far fa-comment"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-retweet"></i></button>
+							<button class="btn text-center small-btn"><i class="far fa-heart"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-sign-out-alt" style="transform: rotate(270deg);"></i></button>
+						</div>
+					</div>
 				</div>
 				<div class="row tweet-box">
-					d
+					<img class="float-left" src="./images/okay.jpg" width="46px" height="46px" style="border-radius: 50%;">
+					<div class="col twt-text text-break">
+						<div class="text-truncate" style="float: left; max-width: 450px">
+							<span style="font-weight: bolder;">
+								kayluuuuuuu&nbsp<i class="fas fa-lock"></i>
+							</span>
+							<span style="color: rgb(101, 119, 134)">@kayluuuuuuu</span>
+						</div>
+						<div style="float: left">
+							<span class="text-nowrap">&nbsp·&nbsp1m</span>
+						</div>
+						<button class="btn text-center chev-btn"><i class="fas fa-chevron-down"></i></button>
+						<span class="twt-content" style="padding-right:10px;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span><br>
+						<div class="d-flex justify-content-between" style="width: 100%; max-width: 425px;">
+							<button class="btn text-center small-btn"><i class="far fa-comment"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-retweet"></i></button>
+							<button class="btn text-center small-btn"><i class="far fa-heart"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-sign-out-alt" style="transform: rotate(270deg);"></i></button>
+						</div>
+					</div>
 				</div>
 				<div class="row tweet-box">
-					e
+					<img class="float-left" src="./images/weird.jpg" width="46px" height="46px" style="border-radius: 50%;">
+					<div class="col twt-text text-break">
+						<div class="text-truncate" style="float: left; max-width: 450px">
+							<span style="font-weight: bolder;">
+								kayluuuuuuu&nbsp<i class="fas fa-lock"></i>
+							</span>
+							<span style="color: rgb(101, 119, 134)">@kayluuuuuuu</span>
+						</div>
+						<div style="float: left">
+							<span class="text-nowrap">&nbsp·&nbsp1m</span>
+						</div>
+						<button class="btn text-center chev-btn"><i class="fas fa-chevron-down"></i></button>
+						<span class="twt-content" style="padding-right:10px;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span><br>
+						<div class="d-flex justify-content-between" style="width: 100%; max-width: 425px;">
+							<button class="btn text-center small-btn"><i class="far fa-comment"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-retweet"></i></button>
+							<button class="btn text-center small-btn"><i class="far fa-heart"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-sign-out-alt" style="transform: rotate(270deg);"></i></button>
+						</div>
+					</div>
 				</div>
 				<div class="row tweet-box">
-					e
+					<img class="float-left" src="./images/okay.jpg" width="46px" height="46px" style="border-radius: 50%;">
+					<div class="col twt-text text-break">
+						<div class="text-truncate" style="float: left; max-width: 450px">
+							<span style="font-weight: bolder;">
+								kayluuuuuuu&nbsp<i class="fas fa-lock"></i>
+							</span>
+							<span style="color: rgb(101, 119, 134)">@kayluuuuuuu</span>
+						</div>
+						<div style="float: left">
+							<span class="text-nowrap">&nbsp·&nbsp1m</span>
+						</div>
+						<button class="btn text-center chev-btn"><i class="fas fa-chevron-down"></i></button>
+						<span class="twt-content" style="padding-right:10px;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span><br>
+						<div class="d-flex justify-content-between" style="width: 100%; max-width: 425px;">
+							<button class="btn text-center small-btn"><i class="far fa-comment"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-retweet"></i></button>
+							<button class="btn text-center small-btn"><i class="far fa-heart"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-sign-out-alt" style="transform: rotate(270deg);"></i></button>
+						</div>
+					</div>
 				</div>
 				<div class="row tweet-box">
-					e
+					<img class="float-left" src="./images/weird.jpg" width="46px" height="46px" style="border-radius: 50%;">
+					<div class="col twt-text text-break">
+						<div class="text-truncate" style="float: left; max-width: 450px">
+							<span style="font-weight: bolder;">
+								kayluuuuuuu&nbsp<i class="fas fa-lock"></i>
+							</span>
+							<span style="color: rgb(101, 119, 134)">@kayluuuuuuu</span>
+						</div>
+						<div style="float: left">
+							<span class="text-nowrap">&nbsp·&nbsp1m</span>
+						</div>
+						<button class="btn text-center chev-btn"><i class="fas fa-chevron-down"></i></button>
+						<span class="twt-content" style="padding-right:10px;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span><br>
+						<div class="d-flex justify-content-between" style="width: 100%; max-width: 425px;">
+							<button class="btn text-center small-btn"><i class="far fa-comment"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-retweet"></i></button>
+							<button class="btn text-center small-btn"><i class="far fa-heart"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-sign-out-alt" style="transform: rotate(270deg);"></i></button>
+						</div>
+					</div>
 				</div>
 				<div class="row tweet-box">
-					e
+					<img class="float-left" src="./images/okay.jpg" width="46px" height="46px" style="border-radius: 50%;">
+					<div class="col twt-text text-break">
+						<div class="text-truncate" style="float: left; max-width: 450px">
+							<span style="font-weight: bolder;">
+								kayluuuuuuu&nbsp<i class="fas fa-lock"></i>
+							</span>
+							<span style="color: rgb(101, 119, 134)">@kayluuuuuuu</span>
+						</div>
+						<div style="float: left">
+							<span class="text-nowrap">&nbsp·&nbsp1m</span>
+						</div>
+						<button class="btn text-center chev-btn"><i class="fas fa-chevron-down"></i></button>
+						<span class="twt-content" style="padding-right:10px;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span><br>
+						<div class="d-flex justify-content-between" style="width: 100%; max-width: 425px;">
+							<button class="btn text-center small-btn"><i class="far fa-comment"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-retweet"></i></button>
+							<button class="btn text-center small-btn"><i class="far fa-heart"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-sign-out-alt" style="transform: rotate(270deg);"></i></button>
+						</div>
+					</div>
 				</div>
-				<div class="row tweet-box" style="margin-bottom: 51.5px;">
-					e
+				<div class="row tweet-box" id="last-twt" style="margin-bottom: 51.5px;">
+					<img class="float-left" src="./images/weird.jpg" width="46px" height="46px" style="border-radius: 50%;">
+					<div class="col twt-text text-break">
+						<div class="text-truncate" style="float: left; max-width: 450px">
+							<span style="font-weight: bolder;">
+								kayluuuuuuu&nbsp<i class="fas fa-lock"></i>
+							</span>
+							<span style="color: rgb(101, 119, 134)">@kayluuuuuuu</span>
+						</div>
+						<div style="float: left">
+							<span class="text-nowrap">&nbsp·&nbsp1m</span>
+						</div>
+						<button class="btn text-center chev-btn"><i class="fas fa-chevron-down"></i></button>
+						<span class="twt-content" style="padding-right:10px;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span><br>
+						<div class="d-flex justify-content-between" style="width: 100%; max-width: 425px;">
+							<button class="btn text-center small-btn"><i class="far fa-comment"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-retweet"></i></button>
+							<button class="btn text-center small-btn"><i class="far fa-heart"></i></button>
+							<button class="btn text-center small-btn"><i class="fas fa-sign-out-alt" style="transform: rotate(270deg);"></i></button>
+						</div>
+					</div>
 				</div>
 
 
-				<nav class="nav fixed-bottom bg-light" style="border-top: 1px solid #cccccc; height: 52.5px; padding-top: 2.5px; font-size: 20px;">
+				<nav class="nav fixed-bottom bg-light bottom-nav" style="border-top: 1px solid #cccccc; height: 52.5px; padding-top: 2.5px; font-size: 20px;">
 					<a class="nav-link text-center" style="width: 25vw; font-weight: bolder; color: rgb(29, 161, 242);" href="#"><i class="fas fa-home"></i></a>
 					<a class="nav-link text-center" style="width: 25vw; font-weight: bolder" href="#"><i class="fas fa-search"></i></a>
 					<a class="nav-link text-center" style="width: 25vw; font-weight: bolder" href="#"><i class="far fa-bell"></i></a>
 					<a class="nav-link text-center" style="width: 25vw; font-weight: bolder" href="#"><i class="far fa-envelope"></i></a>
 				</nav>
 			</div>
-			<div class="col">
+			<div class="col-3 sidebar-right">
 				<input type="search" class="form-control" name="searchbar" style="max-width: 348px;"><br>
 				<div class="card" style="min-width: 228px; max-width: 348px; font-weight: bolder;">
 					<div class="card-header">
